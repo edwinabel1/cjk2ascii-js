@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拼音转换器</title>
+    <script src="unicode_mapping_base64.js" defer></script> 
+    <script src="converter.js" defer></script> <!-- 确保在 unicode_mapping_base64.js 之后加载 -->
+</head>
+<body>
+    <h1>拼音转换器</h1>
+    <label for="inputText">输入文字: </label>
+    <input type="text" id="inputText" oninput="convertToPinyin()">
+    <p>转换后的拼音: <span id="outputText"></span></p>
+</body>
+</html>
